@@ -47,3 +47,158 @@ header{
  .subscribe{
     margin-left: 20px;
 }
+
+h1{
+    font-size: 21px;
+    line-height: 1em;
+}
+
+.title{
+    padding-left: 75px;
+    margin-top: -10px;
+}
+.subtitle{
+    line-height: 0.5em;
+}
+
+.search{
+    padding-left: 75px;
+}
+
+form{
+    display: flex;
+    margin-top: 20px;
+}
+.fa-map-marker-alt{
+    display: block;
+    background-color:#F2F2F2;
+    border: 0.5px solid #F2F2F2;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+input{
+    font-family: inherit;
+    padding: 8px;
+    border-style: solid none solid none;
+    border-color: #F2F2F2;
+}
+ input::placeholder{
+    color: black;
+    font-weight: bold;
+}
+
+.search_button{
+    color: white;
+    background-color: #0065FC;
+    font-weight: bold;
+    font-family: inherit;
+    padding: 10px;
+    border-left: none;
+    border-color: transparent;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.section_filters{
+    padding-left: 75px;
+    margin-top: 20px;
+}
+
+.filters{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#filters_title{
+    margin-right: 20px;
+}
+
+.btn_filters{
+    margin: 0 15px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+    background-color: white;
+    border: 2px solid lightgray;
+    border-radius: 50px;
+    height: 40px;
+    padding-right: 12px;
+}
+
+.btn_filters:hover{
+    color: white;
+    background-color: #0065FC;
+    border: 2px solid transparent;
+
+
+}
+
+.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog{
+    color: #0065FC;
+    border-radius: 100px;
+    background-color: #DEEBFF;
+    padding: 13px;
+    margin-left: -15px;
+    margin-right: 5px;
+    margin-top: -2px;
+}
+
+.circle{
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50px;
+    border: 1px solid #F2F2F2;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 25px;
+    float: left;
+    margin-right: 10px;
+}
+
+.fa-info{
+    color:   #0065FC;
+    line-height: inherit;
+}
+
+.info{
+    position: relative;
+    padding-top: 6px;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.main_container{
+    padding-left: 75px;
+    margin-top: 35px;
+}
+
+.accomodations{
+    float: left;
+    width: 60%;
+    height: 500px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+}
+
+.populars{
+    float: right;
+    width: 30%;
+    height: 500px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    margin-right: 75px;
+
+}
+
+h2{
+    margin-top: 30px;
+    padding-left: 30px;
+}

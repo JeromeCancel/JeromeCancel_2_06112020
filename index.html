@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e89d7d04c3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <title>Reservia, site de réservation de logement.</title>
 </head>
@@ -11,6 +12,7 @@
         <!--Logo-->
         <img class="logo"src="images/Reservia.svg" alt="Reservia-logo">
         <nav>
+        <!--Navbar-->
             <ul class="nav_links">
                 <li><a  href="#accomodation">Hébergements</a></li>
                 <li><a  href="#activities">Activités</a></li>
@@ -18,5 +20,41 @@
         </nav>
         <a class="subscribe" href="#"><strong>S'inscrire</strong></a>
     </header>
+    <!--Section1-search/filters-->
+    <div class="title">
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p class="subtitle">En plein centre ville ou en pleine nature</p>
+    </div>
+    <!--Searchbar-->
+    <form class="search">
+        <i class="fas fa-map-marker-alt fa-xs"></i>
+        <input type="search" placeholder="Marseille, France" name="mysearch">
+        <button class="search_button" type="submit">Rechercher</button>
+    </form>
+    <!--Filters-->
+    <section class="section_filters">
+        <div class="filters">
+            <h3 id="filters_title">Filtres</h3>
+            <button class="btn_filters" onclick="filterSelection('economique')"><i class="fas fa-money-bill-wave"></i> Economique</button>
+            <button class="btn_filters" onclick="filterSelection('familial')"><i class="fas fa-child"></i>Familial</button>
+            <button class="btn_filters" onclick="filterSelection('romantique')"><i class="fas fa-heart"></i> Romantique</button>
+            <button class="btn_filters" onclick="filterSelection('animaux_autorisés')"><i class="fas fa-dog"></i> Animaux autorisés</button>
+        </div>
+        <div class="circle"><i class="fas fa-info fa-sm"></i></div>
+        <p class="info">Plus de 500 logements sont disponibles dans cette ville</p>
+    </section>
+    <!--Section2-Accomodations/Populars-->
+    <section class="main_container">
+        <div class="accomodations">
+            <h2>Hébergements à Marseille</h2>
+
+            <a href="#">Afficher plus</a>
+
+        </div>
+        <aside class="populars">
+            <h2>Les plus populaires<span class="icon_chart"><i class="fas fa-chart-line"></i></span></h2>
+
+        </aside>
+    </section>
 </body>
 </html>
