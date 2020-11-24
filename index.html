@@ -9,18 +9,20 @@
 </head>
 <body>
     <header>
-        <!--Logo-->
-        <div class="wrapper-logo">
-            <a href="#"><img class="nav-logo" src="images/Reservia.svg" alt="Reservia-logo"></a>
+        <div class="wrapper-header">
+            <!--Logo-->
+            <div class="wrapper-logo">
+                <a href="#"><img class="nav-logo" src="images/Reservia.svg" alt="Reservia-logo"></a>
+            </div>
+            <nav>
+                <!--Navbar-->
+                <ul class="nav-links">
+                    <li><a  href="#nav-accomodations">Hébergements</a></li>
+                    <li><a  href="#nav-activities">Activités</a></li>
+                </ul>
+            </nav>
+            <a class="nav-subscribe" href="#"><strong>S'inscrire</strong></a>
         </div>
-        <nav>
-        <!--Navbar-->
-            <ul class="nav-links">
-                <li><a  href="#nav-accomodations">Hébergements</a></li>
-                <li><a  href="#nav-activities">Activités</a></li>
-            </ul>
-        </nav>
-        <a class="nav-subscribe" href="#"><strong>S'inscrire</strong></a>
     </header>
     <!--Section1-search/filters-->
     <div class="wrapper-content">
@@ -32,7 +34,8 @@
     <form class="wrapper-search">
         <i class="fas fa-map-marker-alt fa-s"></i>
         <input type="search" placeholder="Marseille, France" name="mysearch">
-        <button class="btn-search" type="submit">Rechercher</button>
+        <button class="btn-search_desktop" type="submit"><span>Rechercher</span></button>
+        <button class="btn-search_mobile"><span><i class="fas fa-search"></i></span></button>
     </form>
     <!--Filters-->
     <section class="section-filters">
