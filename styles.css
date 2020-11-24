@@ -357,7 +357,7 @@ h2{
     padding-bottom: 20px;
 }
 
-h2 .icon_chart{
+h2 .icon-chart{
     padding-left: 115px;
 }
 
@@ -444,7 +444,7 @@ h2 .icon_chart{
     color: black;
 }
 
-@media all and  (max-width: 1090px){
+@media all and (max-width: 1090px){
     .section-presentation{
         flex-wrap: wrap;
     }
@@ -452,6 +452,71 @@ h2 .icon_chart{
         flex-direction: column;
     }
 }
+
+@media all and (max-width:890px){
+    .wrapper-accomodations{
+        order: 2;
+    }
+    .wrapper-populars{
+        order: 1;
+    }
+}
+
+@media all and (max-width:889px) and (min-width:474px){
+    aside.wrapper-populars{
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media all and (max-width:475px){
+    .section-presentation{
+        padding-left: 0;
+    }
+    aside.wrapper-populars{
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        padding-bottom: 25px;
+    }
+    article.box-populars{
+        margin-bottom: 15px;
+    }
+    aside h2{
+        padding-left: 20px;
+    }
+    .wrapper-accomodations{
+        background-color: white;
+        margin: 0 0 35px 0;
+        width: 100%;
+    }
+    .wrapper-accomodations h2{
+        padding-left: 20px;
+    }
+    .grid-accomodations{
+        padding: 0;
+        margin-bottom: 10px;
+        background-color: white;
+    }
+    .wrapper-accomodations h2{
+        margin-top: 30px;
+        padding-bottom: 0;
+    }
+    a.link-product{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .box-product{
+        width: 90%;
+        margin-left: 15px;
+    }
+    .wrapper-accomodations a.link-viewmore{
+        padding-left: 20px;
+    }
+}
+
 /*-----------------------------POPULAIRES---------------------------------*/
 
 
@@ -628,6 +693,43 @@ h2 .icon_chart{
 
 .box-longchamp .title-activities{
     margin-top: -30px;
+}
+
+@media all and (max-width:475px){
+    .section-activities{
+        margin: -35px 0 0 0;
+    }
+    .section-activities h2{
+        padding: 0 0 10px 20px;
+    }
+    .box-activities{
+        width: 96%;
+        height: 200px;
+        margin-left: 15px;
+    }
+    a.link-activities{
+        width: 96%;
+        margin-right: 20px;
+        margin-bottom: 15px;
+        height: 200px;
+        display: inline-block;
+    }
+    .wrapper-activities-left{
+        margin-bottom: -35px;
+    }
+    .wrapper-activities-left a.link-activities{
+        margin-bottom: 33px;
+    }
+    .wrapper-activities-right{
+        margin-bottom: -70px;
+    }
+    .wrapper-activities-right a.link-activities{
+        margin-bottom: 33px;
+    }
+    .img-vieux-port, .img-pomegues, .img-frioul, .img-calanques,
+    .img-notre-dame, .img-longchamp{
+        height: 77%;
+    }
 }
 
 /*-----------------------------FOOTER-----------------------------------*/
