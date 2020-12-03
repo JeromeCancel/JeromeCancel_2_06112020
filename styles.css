@@ -640,7 +640,6 @@ h2 .icon-chart{
     margin-left: 50px;
     margin-right: 75px;
     margin-top: 35px;
-    margin-bottom: -220px;
     padding-bottom: 35px;
     height: auto;
     background-color: white;
@@ -652,7 +651,7 @@ h2 .icon-chart{
     margin-bottom: 0;
 }
 
-.grid_activities{
+.grid-activities{
     width: auto;
     height: auto;
     display: flex;
@@ -662,6 +661,9 @@ h2 .icon-chart{
 
 .box-activities{
     width: 300px;
+}
+
+.box-img{
     border-radius: 20px;
     box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.10);
 }
@@ -680,33 +682,32 @@ h2 .icon-chart{
 
 .box-activities .img-activities{
     width: 100%;
-    height: 97%;
 }
 
 .img-vieux-port{
     height: auto;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
 }
 
 .box-pomegues{
     height: 35%;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
     margin-right: 40px;
 }
 
 .img-pomegues{
     height: auto;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
 }
 
 .box-frioul{
     height: 29%;
-    margin-top: -17px;
+    margin-top: 45px;
 }
 
 .img-frioul{
     height: auto;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
 }
 
 .box-calanques{
@@ -716,7 +717,7 @@ h2 .icon-chart{
 
 .img-calanques{
     height: auto;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
 }
 
 .box-notre-dame{
@@ -726,68 +727,119 @@ h2 .icon-chart{
 
 .img-notre-dame{
     height: auto;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
 }
 
 .box-longchamp{
     height: 34%;
-    margin-top: -17px;
+    margin-top: 40px;
 }
 
 .img-longchamp{
     height: auto;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
+}
+
+.box-vieux-port > figure{
+    height: 571px;
+}
+
+.box-pomegues > figure{
+    height: 285px;
+}
+
+.box-frioul > figure{
+    height: 236px;
+}
+
+.box-calanques > figure{
+    height: 571px;
+}
+
+.box-notre-dame > figure{
+    height: 244px;
+}
+
+.box-longchamp > figure{
+    height: 277px;
 }
 
 .title-activities{
     padding-left: 20px;
-    margin-top: -25px;
+    margin-top: -35px;
 }
 
 .box-frioul .title-activities{
-    margin-top: -30px;
+    margin-top: -32px;
 }
 
 .box-longchamp .title-activities{
     margin-top: -30px;
 }
 
-@media all and (max-width:475px){
-    .section-activities{
-        margin: -35px 0 0 0;
-    }
+@media all and (max-width:1420px) and (min-width:775px){
     .section-activities h2{
-        padding: 0 0 10px 20px;
-    }
-    .box-activities{
-        width: 96%;
-        height: 200px;
-        margin-left: 15px;
+        text-align: center;
     }
     a.link-activities{
-        width: 96%;
-        margin-right: 65px;
-        margin-bottom: 15px;
-        height: 200px;
-        display: inline-block;
+        flex: 0 0 35%;
+        margin-left: auto;
     }
     .wrapper-activities-left{
-        margin-bottom: -35px;
-        margin-right: 50px;
-    }
-    .wrapper-activities-left a.link-activities{
-        margin-bottom: 33px;
+        margin-right: auto;
     }
     .wrapper-activities-right{
-        margin-bottom: -70px;
-        margin-right: 50px;
+        margin-right: auto;
+        padding-right: 30px;
     }
-    .wrapper-activities-right a.link-activities{
-        margin-bottom: 33px;
+}
+
+@media all and (max-width:774px) and (min-width:476px){
+    .link-activities:first-of-type{
+        margin-bottom: 35px;
     }
-    .img-vieux-port, .img-pomegues, .img-frioul, .img-calanques,
-    .img-notre-dame, .img-longchamp{
-        height: 77%;
+    .grid-activities a:last-of-type{
+        margin-top: -30px;
+        margin-bottom: 35px;
+    }
+    .wrapper-activities-right{
+        padding-right: 40px;
+    }
+}
+
+@media all and (max-width:475px){
+    .section-activities{
+        margin: -45px 0 0 15px;
+    }
+    .section-activities h2{
+        padding: 0 0 10px 5px;
+    }
+    .wrapper-activities-left{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0 65px 0;
+    }
+    .wrapper-activities-left a:last-of-type{
+        margin-top: -25px;
+    }
+    .wrapper-activities-right{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .wrapper-activities-right a:last-of-type{
+        margin-top: -20px;
+    }
+    a.link-activities{
+        width: 83%;
+        height: 200px;
+    }
+    .box-activities{
+        width: 100%;
+    }
+    .grid-activities figure:nth-of-type(1){
+        height: 200px;
+        width: 100%;
     }
 }
 
@@ -797,7 +849,7 @@ footer{
     width: 100%;
     height: auto;
     background-color: #F2F2F2;
-    margin-top: 50px;
+    margin-top: -45px;
     padding-bottom: 30px;
     display: flex;
 }
@@ -834,7 +886,7 @@ footer{
 
  @media all and (max-width: 1120px){
      footer{
-        margin: 40px 0 30px 0;
+        margin: -50px 0 30px 0;
         justify-content: space-between;
      }
      .footer-links-left{
@@ -851,7 +903,7 @@ footer{
  @media all and (max-width: 530px){
      footer{
          flex-direction: column;
-         margin: 30px 0;
+         margin: 50px 0 30px 0 ;
      }
      .footer-links-left{
         padding-left: 30px;
