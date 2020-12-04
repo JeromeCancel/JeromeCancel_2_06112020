@@ -72,8 +72,8 @@ nav{
     border-top: 3px solid #0065FC;
 }
 
-.nav-subscibe{
-    color: #0065FC;
+.nav-subscribe{
+    color: #0065FC; 
 }
 
 @media all and (max-width:890px){
@@ -453,12 +453,12 @@ h2 .icon-chart{
 }
 
 .icons-product.rating4 .fa-star:last-of-type{
-    color: #F2F2F2;
+    color: #e2e2e2;
 }
 
 .low-rates{
     padding-left: 0;
-    color: #F2F2F2;
+    color: #e2e2e2;
 }
 
 .wrapper-accomodations .link-viewmore{
@@ -630,7 +630,7 @@ h2 .icon-chart{
 }
 
 .icons-populars.rating4 .fa-star:last-of-type{
-    color: #F2F2F2;
+    color: #e2e2e2;
 }
 
 /*-----------------------------ACTIVITES-----------------------------------*/
@@ -663,7 +663,7 @@ h2 .icon-chart{
     width: 300px;
 }
 
-.box-img{
+.img-activities{
     border-radius: 20px;
     box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.10);
 }
